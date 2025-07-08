@@ -2,14 +2,14 @@ site_name: Руководство пользователя
 site_url: https://daymonri.github.io/MkDocsWorkTest/
 site_description: Тестовый репозиторий для отработки гипотезы.
 site_author: Aleksey Frolov
-repo_url: https://github.com/daymonri/MkDocsWorkTest.git
+# repo_url: https://github.com/daymonri/MkDocsWorkTest.git
 
 theme: material
 
 nav:
     - Разделы системы:
-                      - Персональные данные: docs\Sections\Personal-data\Personal-data-adm.md
-                      - Рабочие группы: docs\Sections\Working-groups\Working-groups-adm.md
+      - Персональные данные: MkDocsWorkTest\docs\Sections\Personal-data\Personal-data-adm.md
+      - Рабочие группы: MkDocsWorkTest\docs\Sections\Working-groups\Working-groups-adm.md
     - Инструкции: test-file-1.md
     - Глоссарий: test-file-2.md
     - Что нового: test-file-3.md
