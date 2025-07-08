@@ -8,8 +8,8 @@ theme: material
 
 nav:
     - Разделы системы:
-        - Персональные данные: docs\Sections\Personal-data\Personal-data-adm.md
-        - Рабочие группы: docs\Sections\Working-groups\Working-groups-root.md
+          - Персональные данные: docs\Sections\Personal-data\Personal-data-adm.md
+          - Рабочие группы: docs\Sections\Working-groups\Working-groups-root.md
     - Инструкции: test-file-1.md
     - Глоссарий: test-file-2.md
     - Что нового: test-file-3.md
