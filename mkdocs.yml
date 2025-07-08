@@ -1,0 +1,32 @@
+site_name: MkDocsWorkTest
+site_url:
+site_description: Тестовый репозиторий для отработки гипотезы: "Средствами статического генератора сайтов MkDocs мы можем закрыть все наши потребности по части разработки и поддержки пользовательской документации проекта".
+site_author: Frolov Aleksey
+repo_url: https://github.com/daymonri/MkDocsWorkTest.git
+theme: material
+copyright: Copyright &copy; 2025
+
+nav:
+  - Разделы:
+    - Рабочие группы: \Razdeli\Rabocie-gruppi-root.md
+  - Инструкции:
+  - Глоссарий:
+  - Release Notes:
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+
+markdown_extensions:
+  - toc:
+      title: Содержание
