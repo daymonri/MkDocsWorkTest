@@ -1,17 +1,17 @@
 site_name: MkDocsWorkTest
-site_url:
+site_url: https://daymonri.github.io/MkDocsWorkTest/
 site_description: Тестовый репозиторий для отработки гипотезы.
-site_author: Frolov Aleksey
+site_author: Aleksey Frolov
 repo_url: https://github.com/daymonri/MkDocsWorkTest.git
+
 theme: material
-copyright: Copyright &copy; 2025
 
 nav:
     - Разделы:
         - Рабочие группы: Rabocie-gruppi-root.md
-    - Инструкции: test-file.md
-    - Глоссарий: test-file.md
-    - Release Notes: test-file.md
+    - Инструкции: test-file1.md
+    - Глоссарий: test-file2.md
+    - Release Notes: test-file3.md
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -30,3 +30,5 @@ markdown_extensions:
 markdown_extensions:
   - toc:
       title: Содержание
+
+copyright: Copyright &copy; 2025
