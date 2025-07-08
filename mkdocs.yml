@@ -9,7 +9,7 @@ theme: material
 nav:
     - Разделы системы:
         - Рабочие группы: docs\Sections\Working-groups\Working-groups-root.md
-    - Инструкции: docs\Sections\Working-groups\Working-groups-root.md
+    - Инструкции: test-file-4.md
     - Глоссарий: test-file-2.md
     - Что нового: test-file-3.md
 
