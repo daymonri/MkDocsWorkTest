@@ -1,4 +1,4 @@
-site_name: Руководство пользователя X-System
+site_name: Руководство пользователя
 site_url: https://daymonri.github.io/MkDocsWorkTest/
 site_description: Тестовый репозиторий для отработки гипотезы.
 site_author: Aleksey Frolov
@@ -8,7 +8,7 @@ theme: material
 
 nav:
     - Разделы системы:
-        - Рабочие группы: Rabocie-gruppi-root.md
+        - Рабочие группы: docs\Razdeli\Rabockie-gruppi\Rabocie-gruppi-root.md
     - Инструкции: test-file-1.md
     - Глоссарий: test-file-2.md
     - Что нового: test-file-3.md
