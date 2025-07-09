@@ -3,13 +3,14 @@ site_description: Тестовый сайт для отработки гипот
 
 theme:
   name: material
+  language: ru
   features:
     - navigation.tabs # Навигация в виде табов
     - navigation.sections # Секции в навигации
-    - toc.integrate # Интегрировать оглавление страницы в навигацию
-    - search.suggest # Подсказки при поиске
-    - content.code.copy # Кнопка "копировать" для блоков кода
-    - navigation.indexes # Убрать дублирование названий разделов в левом меню
+    # - toc.integrate # Интегрировать оглавление страницы в навигацию
+    # - search.suggest # Подсказки при поиске
+    # - content.code.copy # Кнопка "копировать" для блоков кода
+    # - navigation.indexes # Убрать дублирование названий разделов в левом меню
     - navigation.top # Кнопка "Вернуться к началу"
 
   palette:
@@ -28,14 +29,14 @@ theme:
 
 nav:
   - Разделы XPlan:
-    - test-file-4-1.md
-    - test-file-4-2.md
+    Раздел "Персональные данные": test-file-4-1.md
+    Раздел "Рабочие группы": test-file-4-2.md
   - Инструкции: test-file-1.md
   - Глоссарий: test-file-2.md
   - Что нового: test-file-3.md
 
 markdown_extensions:
-  - admonition # Блоки !!! note, !!! warning
+  - admonition # Блоки note, warning и т.д.
   - pymdownx.details # Сворачиваемые блоки
   - pymdownx.superfences # Вложенные блоки кода
   - pymdownx.tabbed: # Табы
