@@ -28,8 +28,8 @@ theme:
 
 nav:
   - Разделы XPlan:
-    - Персональные данные: Sections\Personal-data\Personal-data-adm.md
-    - Рабочие группы: Sections\Working-groups\Working-groups-adm.md
+    - Персональные данные: test-file-4-1.md
+    - Рабочие группы: test-file-4-2.md
   - Инструкции: test-file-1.md
   - Глоссарий: test-file-2.md
   - Что нового: test-file-3.md
