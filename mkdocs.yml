@@ -3,7 +3,7 @@ site_description: Тестовый сайт для отработки гипот
 
 theme:
   name: material
-  language: ru
+  language: ru # Системный язык (кнопка "К началу", плейсхолдер "Поиск" и т.д.)
   features:
     - navigation.tabs # Навигация в виде табов
     - navigation.sections # Секции в навигации
