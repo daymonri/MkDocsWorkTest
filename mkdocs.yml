@@ -9,6 +9,8 @@ theme:
     - toc.integrate # Интегрировать оглавление страницы в навигацию
     - search.suggest # Подсказки при поиске
     - content.code.copy # Кнопка "копировать" для блоков кода
+    - navigation.indexes # Убрать дублирование названий разделов в левом меню
+    - navigation.top # Кнопка "Вернуться к началу"
 
   palette:
     - scheme: default # Светлая тема
@@ -17,7 +19,7 @@ theme:
       toggle:
         icon: material/brightness-7
         name: Переключиться на тёмную тему
-    - scheme: slate # Темная тема
+    - scheme: slate # Тёмная тема
       primary: 'indigo'
       accent: 'indigo'
       toggle:
@@ -26,8 +28,8 @@ theme:
 
 nav:
     - Разделы XPlan:
-      - Персональные данные: Sections\Personal-data\Personal-data-adm.md
-      - Рабочие группы: Sections\Working-groups\Working-groups-adm.md
+      - Персональные данные: test-file-4-1.md
+      - Рабочие группы: test-file-4-2.md
     - Инструкции: test-file-1.md
     - Глоссарий: test-file-2.md
     - Что нового: test-file-3.md
@@ -38,6 +40,20 @@ markdown_extensions:
   - pymdownx.superfences # Вложенные блоки кода
   - pymdownx.tabbed: # Табы
       alternate_style: true
+
+markdown_extensions: # Подсветка синтаксиса
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+markdown_extensions: # Для выравнивания изображений
+  - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
 
 markdown_extensions: # Заголовок блока "Содержание"
   - toc:
