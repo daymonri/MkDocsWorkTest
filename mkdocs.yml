@@ -39,8 +39,8 @@ markdown_extensions:
   - admonition # Блоки note, warning и т.д.
   - pymdownx.details # Сворачиваемые блоки
   - pymdownx.superfences # Вложенные блоки кода
-  - pymdownx.tabbed: # Табы
-      alternate_style: true
+  # - pymdownx.tabbed: # Табы
+  #     alternate_style: true
 
 markdown_extensions: # Подсветка синтаксиса
   - pymdownx.highlight:
