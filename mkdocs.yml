@@ -58,13 +58,3 @@ markdown_extensions: # Для выравнивания изображений
 markdown_extensions: # Заголовок блока "Содержание"
   - toc:
       title: Содержание
-
-plugins: # Локализация системных слов (поиск, предыдудщий, следующий)
-  - i18n:
-      docs_structure: suffix
-      default_language: ru
-      languages:
-        ru:
-          name: Russian
-          build: true
-          site_name: "Руководство пользователя XPlan"
