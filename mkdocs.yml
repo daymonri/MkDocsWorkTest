@@ -28,8 +28,8 @@ theme:
 
 nav:
   - Разделы XPlan:
-    - Персональные данные: test-file-4-1.md
-    - Рабочие группы: test-file-4-2.md
+    - test-file-4-1.md
+    - test-file-4-2.md
   - Инструкции: test-file-1.md
   - Глоссарий: test-file-2.md
   - Что нового: test-file-3.md
@@ -58,3 +58,13 @@ markdown_extensions: # Для выравнивания изображений
 markdown_extensions: # Заголовок блока "Содержание"
   - toc:
       title: Содержание
+
+plugins: # Локализация системных слов (поиск, предыдудщий, следующий)
+  - i18n:
+      docs_structure: suffix
+      default_language: ru
+      languages:
+        ru:
+          name: Russian
+          build: true
+          site_name: "Руководство пользователя XPlan"
