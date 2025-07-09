@@ -1,20 +1,45 @@
 site_name: Руководство пользователя
-site_url: https://daymonri.github.io/MkDocsWorkTest/
-site_description: Тестовый репозиторий для отработки гипотезы.
-site_author: Aleksey Frolov
-# repo_url: https://github.com/daymonri/MkDocsWorkTest.git
+site_description: Тестовый сайт для отработки гипотезы.
 
-theme: material
+theme:
+  name: material
+  features:
+    - navigation.tabs # Навигация в виде табов
+    - navigation.sections # Секции в навигации
+    - toc.integrate # Интегрировать оглавление страницы в навигацию
+    - search.suggest # Подсказки при поиске
+    - content.code.copy # Кнопка "копировать" для блоков кода
+
+  palette:
+    - scheme: default # Светлая тема
+      primary: 'indigo'
+      accent: 'indigo'
+      toggle:
+        icon: material/brightness-7
+        name: Переключиться на темную тему
+    - scheme: slate # Темная тема
+      primary: 'indigo'
+      accent: 'indigo'
+      toggle:
+        icon: material/brightness-4
+        name: Переключиться на светлую тему
 
 nav:
-    - Разделы системы:
-      - Персональные данные: MkDocsWorkTest\docs\Sections\Personal-data\Personal-data-adm.md
-      - Рабочие группы: MkDocsWorkTest\docs\Sections\Working-groups\Working-groups-adm.md
+    - Разделы XPlan:
+      - Персональные данные: Sections\Personal-data\Personal-data-adm.md
+      - Рабочие группы: Sections\Working-groups\Working-groups-adm.md
     - Инструкции: test-file-1.md
     - Глоссарий: test-file-2.md
     - Что нового: test-file-3.md
 
 markdown_extensions:
+  - admonition # Блоки !!! note, !!! warning
+  - pymdownx.details # Сворачиваемые блоки
+  - pymdownx.superfences # Вложенные блоки кода
+  - pymdownx.tabbed: # Табы
+      alternate_style: true
+
+markdown_extensions: # Подсветка синтаксиса
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -23,13 +48,11 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
 
-markdown_extensions:
+markdown_extensions: # Для выравнивания изображений
   - attr_list
   - md_in_html
   - pymdownx.blocks.caption
 
-markdown_extensions:
+markdown_extensions: # Заголовок блока "Содержание"
   - toc:
       title: Содержание
-
-copyright: Copyright &copy; 2025
