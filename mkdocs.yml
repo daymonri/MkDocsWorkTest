@@ -27,9 +27,9 @@ theme:
         name: Переключиться на светлую тему
 
 nav:
-    - Разделы XPlan:
-      - Персональные данные: test-file-4-1.md
-      - Рабочие группы: test-file-4-2.md
+    - Разделы XPlan: test-file-4-1.md
+      # - Персональные данные: test-file-4-1.md
+      # - Рабочие группы: test-file-4-2.md
     - Инструкции: test-file-1.md
     - Глоссарий: test-file-2.md
     - Что нового: test-file-3.md
