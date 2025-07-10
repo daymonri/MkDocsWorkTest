@@ -33,10 +33,13 @@ nav: # Структура сайта
   - Глоссарий: test-file-2.md
   - Что нового: test-file-3.md
 
-markdown_extensions: # Блоки note, warning и т.д.
-  - admonition
-  - pymdownx.details # Сворачиваемые блоки
-  - pymdownx.superfences # Вложенные блоки кода
+markdown_extensions:
+  - admonition  # базовые выноски
+  - pymdownx.details  # расширенные выноски
+  - pymdownx.superfences  # подсветка кода
+  - attr_list  # для кастомизации
+  - pymdownx.emoji  # если используете emoji
+  - pymdownx.snippets  # если используете вставки
 
 markdown_extensions: # Подсветка синтаксиса в блоках кода
   - pymdownx.highlight:
@@ -55,3 +58,6 @@ markdown_extensions: # Выравнивание изображений
 markdown_extensions: # Заголовок блока "Содержание" на русском
   - toc:
       title: Содержание
+
+plugins:
+  - search
