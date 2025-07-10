@@ -36,10 +36,15 @@ nav: # Структура сайта
 markdown_extensions:
   - admonition  # базовые выноски
   - pymdownx.details  # расширенные выноски
-  - pymdownx.superfences  # подсветка кода
-  - attr_list  # для кастомизации
-  - pymdownx.emoji  # если используете emoji
-  - pymdownx.snippets  # если используете вставки
+  - pymdownx.superfences:  # подсветка кода
+      custom_fences:
+        - name: any
+          class: any
+          format: !!python/name:pymdownx.superfences.fence_div_format
+
+#  - attr_list  # для кастомизации
+#  - pymdownx.emoji  # если используете emoji
+#  - pymdownx.snippets  # если используете вставки
 
 markdown_extensions: # Подсветка синтаксиса в блоках кода
   - pymdownx.highlight:
