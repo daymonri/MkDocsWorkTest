@@ -1,7 +1,7 @@
-site_name: Руководство пользователя XPlan
-site_description: Тестовый сайт для отработки гипотезы.
+site_name: Руководство пользователя XPlan # Название сайта
+site_description: Тестовый сайт для отработки гипотезы. # Описание сайта
 
-theme:
+theme: # Конфигурация используемой темы
   name: material
   language: ru # Системный язык (кнопка "К началу", плейсхолдер "Поиск" и т.д.)
   features:
@@ -11,7 +11,7 @@ theme:
     # - content.code.copy # Кнопка "копировать" для блоков кода
     - navigation.top # Кнопка "Вернуться к началу"
 
-  palette:
+  palette: # Визуальное оформление
     - scheme: default # Светлая тема
       primary: 'indigo' # light blue
       accent: 'indigo'
@@ -25,16 +25,16 @@ theme:
         icon: material/brightness-4
         name: Переключиться на светлую тему
 
-nav:
+nav: # Структура сайта
   - Разделы XPlan:
-    - Раздел "Персональные данные": test-file-4-1.md
+    - Раздел "Персональные данные": docs/Sections/Personal-data/Personal-data-adm.
     - Раздел "Рабочие группы": test-file-4-2.md
   - Инструкции: test-file-1.md
   - Глоссарий: test-file-2.md
   - Что нового: test-file-3.md
 
-markdown_extensions:
-  - admonition # Блоки note, warning и т.д.
+markdown_extensions: # Блоки note, warning и т.д.
+  - admonition
   - pymdownx.details # Сворачиваемые блоки
   - pymdownx.superfences # Вложенные блоки кода
 
