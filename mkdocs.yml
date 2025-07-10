@@ -37,10 +37,8 @@ markdown_extensions:
   - admonition # Блоки note, warning и т.д.
   - pymdownx.details # Сворачиваемые блоки
   - pymdownx.superfences # Вложенные блоки кода
-  - pymdownx.tabbed: # Табы
-      alternate_style: true
 
-markdown_extensions: # Подсветка синтаксиса
+markdown_extensions: # Подсветка синтаксиса в блоках кода
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
@@ -49,11 +47,11 @@ markdown_extensions: # Подсветка синтаксиса
   - pymdownx.snippets
   - pymdownx.superfences
 
-markdown_extensions: # Для выравнивания изображений
+markdown_extensions: # Выравнивание изображений
   - attr_list
   - md_in_html
   - pymdownx.blocks.caption
 
-markdown_extensions: # Заголовок блока "Содержание"
+markdown_extensions: # Заголовок блока "Содержание" на русском
   - toc:
       title: Содержание
