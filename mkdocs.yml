@@ -7,10 +7,8 @@ theme:
   features:
     - navigation.tabs # Навигация в виде табов
     - navigation.sections # Секции в навигации
-    # - toc.integrate # Интегрировать оглавление страницы в навигацию
     # - search.suggest # Подсказки при поиске
     # - content.code.copy # Кнопка "копировать" для блоков кода
-    # - navigation.indexes # Убрать дублирование названий разделов в левом меню
     - navigation.top # Кнопка "Вернуться к началу"
 
   palette:
@@ -39,8 +37,8 @@ markdown_extensions:
   - admonition # Блоки note, warning и т.д.
   - pymdownx.details # Сворачиваемые блоки
   - pymdownx.superfences # Вложенные блоки кода
-  # - pymdownx.tabbed: # Табы
-  #     alternate_style: true
+  - pymdownx.tabbed: # Табы
+      alternate_style: true
 
 markdown_extensions: # Подсветка синтаксиса
   - pymdownx.highlight:
