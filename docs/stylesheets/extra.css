@@ -9,3 +9,13 @@
 .md-typeset pre {
   white-space: pre-wrap;
 }
+
+/* Переопределение цветов выносок */
+:root {
+  --md-admonition-fg-color: #19407c; /* Цвет текста */
+  --md-admonition-bg-color: #e8f0ff; /* Цвет фона */
+}
+
+.md-typeset .admonition {
+  border-left: .2rem solid #4285f4; /* Синяя левая граница */
+}

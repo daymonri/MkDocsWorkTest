@@ -9,12 +9,6 @@ theme: # Конфигурация используемой темы
     - navigation.sections # Секции в навигации
     # - search.suggest # Подсказки при поиске
     # - content.code.copy # Кнопка "копировать" для блоков кода
-    - navigation.top # Кнопка "Вернуться к началу"
-    - content.code.annotate
-    - content.tabs.link
-    - content.action.edit
-    - navigation.indexes
-    - navigation.top  # Критично для выносок!
 
   palette: # Визуальное оформление
     - scheme: default # Светлая тема
@@ -39,9 +33,7 @@ nav: # Структура сайта
   - Что нового: test-file-3.md
 
 markdown_extensions:
-#  - admonition  # базовые выноски
-  - pymdownx.admonition:  # Вместо простого admonition
-      types: [note, warning, danger]
+  - admonition  # базовые выноски
   - pymdownx.details  # расширенные выноски
   - pymdownx.superfences:  # подсветка кода
       custom_fences:
@@ -55,9 +47,6 @@ markdown_extensions:
   - attr_list  # для кастомизации
   - pymdownx.emoji  # если используете emoji
   - pymdownx.snippets  # если используете вставки
-
-extra_css:
-  - stylesheets/extra.css
 
 markdown_extensions: # Подсветка синтаксиса в блоках кода
   - pymdownx.highlight:
