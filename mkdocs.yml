@@ -13,13 +13,13 @@ theme:
 
   palette:
     - scheme: default # Светлая тема
-      primary: 'light blue'
+      primary: 'indigo' # light blue
       accent: 'indigo'
       toggle:
         icon: material/brightness-7
         name: Переключиться на тёмную тему
     - scheme: slate # Тёмная тема
-      primary: 'light blue'
+      primary: 'indigo'
       accent: 'indigo'
       toggle:
         icon: material/brightness-4
