@@ -28,7 +28,7 @@ theme: # Конфигурация используемой темы
 nav: # Структура сайта
   - Разделы XPlan:
     - Раздел "Персональные данные": Sections/Personal-data/Personal-data-adm.md
-    - Раздел "Рабочие группы": test-file-4-2.md
+    - Раздел "Рабочие группы": Sections/Working-groups/Working-groups-adm.md
   - Инструкции: test-file-1.md
   - Глоссарий: test-file-2.md
   - Что нового: test-file-3.md
