@@ -55,6 +55,3 @@ markdown_extensions: # Выравнивание изображений
 markdown_extensions: # Заголовок блока "Содержание" на русском
   - toc:
       title: Содержание
-
-plugins:
-  - external-markdown
