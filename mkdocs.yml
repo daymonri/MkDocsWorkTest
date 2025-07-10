@@ -10,6 +10,11 @@ theme: # Конфигурация используемой темы
     # - search.suggest # Подсказки при поиске
     # - content.code.copy # Кнопка "копировать" для блоков кода
     - navigation.top # Кнопка "Вернуться к началу"
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - navigation.indexes
+    - navigation.top  # Критично для выносок!
 
   palette: # Визуальное оформление
     - scheme: default # Светлая тема
