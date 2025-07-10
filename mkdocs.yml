@@ -34,7 +34,9 @@ nav: # Структура сайта
   - Что нового: test-file-3.md
 
 markdown_extensions:
-  - admonition  # базовые выноски
+#  - admonition  # базовые выноски
+  - pymdownx.admonition:  # Вместо простого admonition
+      types: [note, warning, danger]
   - pymdownx.details  # расширенные выноски
   - pymdownx.superfences:  # подсветка кода
       custom_fences:
