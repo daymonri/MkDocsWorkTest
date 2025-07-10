@@ -68,3 +68,6 @@ markdown_extensions: # Заголовок блока "Содержание" на
 
 plugins:
   - search
+
+extra_css:
+  - stylesheets/extra.css
