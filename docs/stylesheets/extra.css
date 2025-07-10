@@ -1,0 +1,11 @@
+/* Перенос длинных слов в выносках */
+.md-typeset .admonition,
+.md-typeset details {
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+/* Перенос в предформатированном тексте */
+.md-typeset pre {
+  white-space: pre-wrap;
+}
