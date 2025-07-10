@@ -38,9 +38,13 @@ markdown_extensions:
   - pymdownx.details  # расширенные выноски
   - pymdownx.superfences:  # подсветка кода
       custom_fences:
-        - name: any
-          class: any
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+        - name: wrap
+          class: wrap
           format: !!python/name:pymdownx.superfences.fence_div_format
+  - pymdownx.highlight
   - attr_list  # для кастомизации
   - pymdownx.emoji  # если используете emoji
   - pymdownx.snippets  # если используете вставки
