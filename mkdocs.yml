@@ -41,7 +41,7 @@ nav: # Структура сайта
 markdown_extensions:
   - admonition  # базовые выноски
   - pymdownx.details  # расширенные выноски
-  - pymdownx.superfences
+  - pymdownx.superfences # вложенные выноски
 
 markdown_extensions: # Подсветка синтаксиса в блоках кода
   - pymdownx.highlight:
@@ -64,7 +64,17 @@ markdown_extensions: # Заголовок блока "Содержание" на
 plugins:
   - search
   - external-markdown
-  - include-markdown
-
+  - include-markdown:
+      encoding: ascii
+      preserve_includer_indent: false
+      dedent: false
+      trailing_newlines: true
+      comments: true
+      rewrite_relative_urls: true
+      heading_offset: 0
+      start: <!--start-->
+      end: <!--end-->
+      recursive: true
+      
 # extra_css: # Переносы в выносках
 #  - stylesheets/extra.css
