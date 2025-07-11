@@ -8,8 +8,7 @@ theme: # Конфигурация используемой темы
     - navigation.tabs # Навигация в виде табов
     - navigation.sections # Секции в навигации
     - navigation.top # Кнопка "К началу"
-    # - search.suggest # Подсказки при поиске
-    # - content.code.copy # Кнопка "копировать" для блоков кода
+
   icon:
     admonition:
       note: material/comment-alert
@@ -64,17 +63,3 @@ markdown_extensions: # Заголовок блока "Содержание" на
 plugins:
   - search
   - external-markdown
-  - include-markdown:
-      encoding: ascii
-      preserve_includer_indent: false
-      dedent: false
-      trailing_newlines: true
-      comments: true
-      rewrite_relative_urls: true
-      heading_offset: 0
-      start: <!--start-->
-      end: <!--end-->
-      recursive: true
-      
-# extra_css: # Переносы в выносках
-#  - stylesheets/extra.css
