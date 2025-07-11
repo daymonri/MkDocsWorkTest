@@ -67,4 +67,4 @@ plugins:
   - include-markdown
 
 # extra_css: # Переносы в выносках
-  - stylesheets/extra.css
+#  - stylesheets/extra.css
