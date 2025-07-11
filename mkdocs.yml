@@ -10,6 +10,20 @@ theme: # Конфигурация используемой темы
     - navigation.top # Кнопка "К началу"
     # - search.suggest # Подсказки при поиске
     # - content.code.copy # Кнопка "копировать" для блоков кода
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
 
   palette: # Визуальное оформление
     - scheme: default # Светлая тема
@@ -56,12 +70,10 @@ markdown_extensions: # Заголовок блока "Содержание" на
   - toc:
       title: Содержание
 
-# plugins:
-#  - search
-
 plugins:
+  - search
   - external-markdown
   - include-markdown
-
+  
 extra_css: # Переносы в выносках
   - stylesheets/extra.css
