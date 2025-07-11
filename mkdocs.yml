@@ -61,6 +61,7 @@ markdown_extensions: # Заголовок блока "Содержание" на
 
 plugins:
   - external-markdown
+  - include-markdown
 
 extra_css: # Переносы в выносках
   - stylesheets/extra.css
