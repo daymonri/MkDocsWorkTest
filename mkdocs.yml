@@ -56,8 +56,11 @@ markdown_extensions: # Заголовок блока "Содержание" на
   - toc:
       title: Содержание
 
-plugins: # Плагины
-  - search
+# plugins:
+#  - search
+
+plugins:
+  - external-markdown
 
 extra_css: # Переносы в выносках
   - stylesheets/extra.css
