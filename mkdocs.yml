@@ -29,6 +29,27 @@ theme: # Конфигурация используемой темы
         icon: material/brightness-4
         name: Переключиться на светлую тему
 
+markdown_extensions:
+  - admonition  # базовые выноски
+  - pymdownx.details  # расширенные выноски
+  - pymdownx.superfences # вложенные выноски
+  - pymdownx.highlight: # Подсветка синтаксиса в блоках кода
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - attr_list # Выравнивание изображений
+  - md_in_html
+  - pymdownx.blocks.caption
+  - toc: # Заголовок блока "Содержание" на русском
+      title: Содержание
+
+plugins:
+  - search
+  - include-markdown
+
 nav: # Структура сайта
   - Разделы XPlan:
     - Раздел "Персональные данные": Sections/Personal-data/Personal-data-adm.md
@@ -36,41 +57,3 @@ nav: # Структура сайта
   - Инструкции: test-file-1.md
   - Глоссарий: test-file-2.md
   - Что нового: test-file-3.md
-
-markdown_extensions:
-  - admonition  # базовые выноски
-  - pymdownx.details  # расширенные выноски
-  - pymdownx.superfences # вложенные выноски
-
-markdown_extensions: # Подсветка синтаксиса в блоках кода
-  - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
-  - pymdownx.superfences
-
-markdown_extensions: # Выравнивание изображений
-  - attr_list
-  - md_in_html
-  - pymdownx.blocks.caption
-
-markdown_extensions: # Заголовок блока "Содержание" на русском
-  - toc:
-      title: Содержание
-
-plugins:
-  - search
-  - external-markdown
-  - include-markdown:
-      encoding: ascii
-      preserve_includer_indent: false
-      dedent: false
-      trailing_newlines: true
-      comments: true
-      rewrite_relative_urls: true
-      heading_offset: 0
-      start: <!--start-->
-      end: <!--end-->
-      recursive: true
